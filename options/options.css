@@ -1,0 +1,39 @@
+.loading-delay-input::-webkit-inner-spin-button,
+.loading-delay-input::-webkit-outer-spin-button {
+	-webkit-appearance: none;
+	margin: 0;
+}
+
+
+a {
+	color: blue;
+	/* 设置默认链接颜色 */
+	text-decoration: none;
+	/* 去除下划线 */
+	font-size: 18px;
+	/* 设置字体大小 */
+}
+
+a:hover {
+	color: red;
+	/* 鼠标悬停时变红 */
+	text-decoration: underline;
+	/* 悬停时显示下划线 */
+}
+
+a:active {
+	color: green;
+	/* 点击时变绿 */
+}
+
+a:visited {
+	color: blue;
+}
+
+.version-span{
+	font-size: 18px;
+}
+
+.hide {
+	display: none;
+}

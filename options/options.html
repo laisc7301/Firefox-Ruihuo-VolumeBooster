@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<title>音量增益工具设置</title>
+		<link rel="stylesheet" type="text/css" href="./options.css">
+	</head>
+
+	<body>
+		默认音量倍数：<input type="number" class="volume-multiple-input" />
+		<br />
+		<br />
+		<label>
+			<input type="checkbox" class="auto-unmute-checkbox">
+			自动取消静音
+		</label>
+		<br />
+		<br />
+		加载延时(ms)：<input type="number" class="loading-delay-input" />
+		<br />
+		<br />
+		<span>自动规则列表：</span><br />
+		<textarea class="auto-rule-list-textarea" rows="6" cols="40"></textarea>
+		<br />
+		<button class="reset-button">恢复默认</button>
+		<button class="options__test-button hide">测试</button>
+		<button class="options__test2-button hide">测试2</button>
+		<button class="options__test3-button hide">测试3</button>
+		<br />
+		<br />
+		<span class="version-span">v2.0</span> <a href="https://laisc7301.github.io/" target="_blank" rel="noopener noreferrer">作者博客</a> <a href="https://github.com/laisc7301/Firefox-Ruihuo-VolumeBooster" target="_blank" rel="noopener noreferrer">源代码</a>
+		<script src="options.js" nonce="some-unique-nonce"></script>
+	</body>
+
+</html>
