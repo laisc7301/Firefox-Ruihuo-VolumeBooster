@@ -92,17 +92,26 @@ function optionsMyLoad() {
 
 function resetAll() {
 
-    chrome.storage.local.clear(function () {
-        if (chrome.runtime.lastError) {
-            console.error("清除存储出错：", chrome.runtime.lastError);
-        } else {
-            console.log("所有 local 存储的数据已清除");
-            volumeMultipleInput.value = defaultVolumeMultiple;
-            autoRuleListTextarea.value = defaultAutoRulesList;
-            autoUnmuteCheckbox.checked = defaultAutoUnmuteCheckbox;
-            loadingDelayInput.value = defaultloadingDelay;
-        }
-    });
+    if (confirm("确定要恢复默认吗？")) {
+        console.log("用户点击了确定");
+
+        chrome.storage.local.clear(function () {
+            if (chrome.runtime.lastError) {
+                console.error("清除存储出错：", chrome.runtime.lastError);
+            } else {
+                console.log("所有 local 存储的数据已清除");
+                volumeMultipleInput.value = defaultVolumeMultiple;
+                autoRuleListTextarea.value = defaultAutoRulesList;
+                autoUnmuteCheckbox.checked = defaultAutoUnmuteCheckbox;
+                loadingDelayInput.value = defaultloadingDelay;
+            }
+        });
+
+    } else {
+        console.log("用户点击了取消");
+    }
+
+
 
 }
 
