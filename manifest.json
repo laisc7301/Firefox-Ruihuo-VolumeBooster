@@ -1,7 +1,7 @@
 {
     "manifest_version": 2,
     "name": "音量增益工具",
-    "version": "2.2",
+    "version": "2.4",
     "description": "音量增益小工具，扩大网页音量",
     "homepage_url": "https://laisc7301.github.io/blog/",
     "icons": {

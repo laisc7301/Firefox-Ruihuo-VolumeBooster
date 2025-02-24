@@ -92,7 +92,7 @@ function optionsMyLoad() {
 
 function resetAll() {
 
-    if (confirm("确定要恢复默认吗？")) {
+    if (confirm("确定要全部重置吗？")) {
         console.log("用户点击了确定");
 
         chrome.storage.local.clear(function () {
